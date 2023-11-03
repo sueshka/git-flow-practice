@@ -20,15 +20,6 @@ class Diary:
     def add_subject(self, subject):
         self.subjects.append(subject)
 
-    def calculate_average_grade(self):
-        total_grades = 0
-        total_subjects = len(self.subjects)
-
-        for subject in self.subjects:
-            for grade in subject.grades:
-                total_grades += grade
-
-        return total_grades / (total_subjects * len(subject.grades))
 
 
 student = Student("Liliya")
@@ -43,7 +34,3 @@ math.add_grade(92)
 print(f"Student: {liliyas_diary_diary.student.name}")
 print(f"Subjects in Liliya's Diary: {', '.join([subject.name for subject in liliyas_diary.subjects])}")
 print(f"Average Grade for John: {liliyas_diary.calculate_average_grade()}")
-
-print(f"Student: {alices_diary.student.name}")
-print(f"Subjects in Alice's Diary: {', '.join([subject.name for subject in alices_diary.subjects])}")
-print(f"Average Grade for Alice: {alices_diary.calculate_average_grade()}")
