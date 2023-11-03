@@ -33,4 +33,3 @@ math.add_grade(92)
 
 print(f"Student: {liliyas_diary_diary.student.name}")
 print(f"Subjects in Liliya's Diary: {', '.join([subject.name for subject in liliyas_diary.subjects])}")
-print(f"Average Grade for John: {liliyas_diary.calculate_average_grade()}")
